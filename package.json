@@ -1,0 +1,35 @@
+{
+  "name": "@frigid-ui/icons",
+  "version": "0.0.1",
+  "repository": "https://github.com/Antfroze/frigid-icons.git",
+  "bugs": { "url": "https://github.com/Antfroze/frigid-icons/issues" },
+  "homepage": "https://frigid-ui/icons",
+  "author": "Antfroze",
+  "keywords": [
+    "svelte",
+    "icons",
+    "svg",
+    "inline",
+    "frigid",
+    "design",
+    "library"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/types/index.d.ts",
+  "svelte": "./dist/components/index.js",
+  "scripts": {
+    "build": "node src/index.js",
+    "gen-vercel": "node src/gens/vercel.js"
+  },
+  "devDependencies": {
+    "chalk": "^5.0.1",
+    "jsdom": "^20.0.0",
+    "ora": "^6.1.2",
+    "svelte": "^3.50.1",
+    "svgo": "^2.8.0"
+  }
+}
